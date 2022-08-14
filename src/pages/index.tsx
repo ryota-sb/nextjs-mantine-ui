@@ -20,17 +20,19 @@ const Home: NextPage = () => {
   };
 
   return (
-    <main className={styles.main}>
-      <h1 className={styles.title}>Mantine Hooks!!</h1>
-      <TextInput
-        style={{ margin: "1rem" }}
-        value={value}
-        onChange={onChangeValue}
-      />
-      <Button color={label} onClick={() => toggle()}>
-        {label}
-      </Button>
-    </main>
+    <div>
+      <main className={styles.main}>
+        <h1 className={styles.title}>Mantine Hooks!!</h1>
+        <TextInput
+          style={{ margin: "1rem" }}
+          value={value}
+          onChange={onChangeValue}
+        />
+        <Button color={label} onClick={() => toggle()}>
+          {label}
+        </Button>
+      </main>
+    </div>
   );
 };
 
